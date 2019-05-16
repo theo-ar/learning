@@ -1,0 +1,219 @@
+nav {
+    background-color: #C12127;
+    color: rgba(255,255,255,0.8);
+    padding: 15px;
+    height: 60px;
+  }
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header {
+  background-color: rgb(32, 101, 136);
+}
+
+.first-halve {
+  padding: 6px;
+}
+
+
+.search-container {
+  float: left;
+}
+
+.search-container input[type=text]{
+  width: 1580px;
+  height: 40px;
+  background-color: rgb(31, 82, 111);
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+.search-container input,button {
+  border: 0;
+  height: 40px;
+  background-color: rgb(31, 82, 111);
+  
+}
+
+#img-logo {
+  height: 45px;
+  float:left;
+  padding-right: 5px;
+  padding-bottom: 7px;
+}
+
+.right-bar {
+  display: inline-block;
+  float: right;
+  padding: 10px;
+  margin: 0 20px 0 0;
+}
+
+.right-bar a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+.right-bar li {
+  display: inline-block;
+  margin: 0 auto;
+  float: left;
+}
+
+#bear {
+  height: 30px;
+}
+
+.second-halve {
+  padding-left: 250px;
+  padding-top: 50px;
+  padding-bottom:50px;
+
+}
+
+.second-halve button {
+  background-color: rgb(240, 146, 51);
+  color: white;
+  border-radius: 25px;
+  width: 150px;
+}
+
+.middle{
+  background-color: rgb(39, 53, 71);
+  color:white;
+}
+
+
+
+#mid-img{
+  margin-left: 500px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  width: 500px;
+}
+
+.text-content {
+  float: right;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+
+.mid-content li{
+  padding: 10px;
+}
+
+.text-content button {
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+  width: 150px;
+  
+  border: 0;
+}
+.text-content a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+
+.semi-last{
+  position: relative;
+  height: 500px;
+  background-color: rgb(32, 101, 136);
+  color: white;
+  margin-top: -20px;
+}
+.semi-last .content{
+  position: absolute;
+  margin-left: 500px;
+  padding-top: 120px;
+}
+
+.semi-last .content button {
+  background-color: rgb(49, 68, 88);
+  color: white;
+  border-radius: 25px;
+  width: 150px;
+  border: 0;
+}
+
+.center {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  background-color: White;
+}
+
+.heading {
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  color:rgb(83, 88, 98);
+  
+}
+
+.logos a{
+  color: rgb(208, 74, 73);
+}
+
+.logos p{
+  color: rgb(135, 145, 156);
+}
+
+.find {
+  width: 33%;
+  float: left;
+}
+.discover {
+  width: 33%;
+  float: right;
+}
+.build {
+  width: 33%;
+  float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  .second-halve {
+	margin:0 auto;
+    width: 70%;
+    color: white;
+  }
+  
