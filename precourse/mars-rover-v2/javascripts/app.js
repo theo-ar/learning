@@ -1,5 +1,7 @@
 // Rover Object Goes Here
 // ======================
+
+
 var rover = {
   direction: "N",
   x: 0,
@@ -80,20 +82,24 @@ function moveBackward(rover){
 function commands(string) {
   console.log("commands was called")
   for (let i=0; i<string.length; i++) {
-    if (string[i] === "r") {
-      turnRight(rover);
-    } else if (string[i] === "l") {
-      turnLeft(rover);
-    } else if (string[i] === "f") {
-      moveForward(rover)
-    } else if (string[i] === "b") {
-      moveBackward(rover)
-    } else {
-      continue;
+    switch(string[i]) {
+      case "r":
+        turnRight(rover);
+        break
+      case "l":
+        turnLeft(rover);
+        break
+      case "f":
+        moveForward(rover);
+        break
+      case "b":
+        moveBackward(rover);
+        break
+      default:
+        continue;
     }
   }
 }
-
 
 
 
