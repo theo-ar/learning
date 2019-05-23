@@ -43,8 +43,25 @@ Game.prototype.wrap = function(pos) {
   }
 }
 
-Game.prototype.step = function() {
-  
+Game.prototype.checkCollisions = function() {
+  for(let i = 0; i < asteroids.length-1; i++){
+    for(let j = 1; j < asteroids.length; j++){
+      if (asteroids[i].isCollidedWith(asteroids[j])) {
+        
+      }
+    }
+  }
 }
+
+Game.prototype.remove = function(asteroid) {
+  let index = asteroids.indexOf(asteroid);
+  asteroids.splice(index, 1);
+}
+
+Game.prototype.step = function() {
+  this.moveObjects();
+  this.checkCollisions();
+}
+
 
 module.exports = Game;

@@ -29,8 +29,19 @@ MovingObject.prototype.draw = function (ctx) {
   ctx.fill();
 };
 
-MovingObject.prototype.isCollidedWith = function(otherMovingObject) {
+MovingObject.prototype.isCollidedWith = function(otherObject) {
+  let a = this.pos[0] - otherObject.pos[0];
+  let b = this.pos[1] - otherObject.pos[1];
+  let center_dist = Math.sqrt( a*a + b*b );
+  let radius_sum = this.radius + otherObject.radius;
 
+  if (center_dist < radius_sum) {
+    Game.prototype.remove(this);
+    Game.prototype.remove(otherObject);
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = MovingObject

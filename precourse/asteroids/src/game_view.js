@@ -7,7 +7,7 @@ function GameView() {
 GameView.prototype.start = function (canvasEl) {
   const ctx = canvasEl.getContext("2d");
   setInterval(() => {
-    this.g.moveObjects();
+    this.g.step();
     this.g.draw(ctx);
   }, 20);
   
