@@ -7,4 +7,4 @@ function Ship(name) {
 Ship.prototype = Object.create(movingObject.prototype);
 Ship.prototype.constructor = Ship;
 
-modules.export = Ship;
+module.exports = Ship;

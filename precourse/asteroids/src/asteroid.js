@@ -1,10 +1,18 @@
 var MovingObject = require("./moving_object.js")
+var Util = require("./utils.js")
 
-function Asteroid(name) {
-  MovingObject.call(this, name)
+const COLOR = "blue";
+const RADIUS = 10;
+
+function Asteroid(object) {
+  MovingObject.call(this, object);
+  this.color = COLOR;
+  this.radius = RADIUS;
+  this.vel = Util.randomVec(10);
 };
 
-Asteroid.prototype = Object.create(movingObject.prototype);
-Asteroid.prototype.constructor = Asteroid;
 
-modules.export = Asteroid;
+
+Util.inherits(Asteroid, MovingObject);
+
+module.exports = Asteroid;

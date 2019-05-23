@@ -7,4 +7,4 @@ function Bullet(name) {
 Bullet.prototype = Object.create(movingObject.prototype);
 Bullet.prototype.constructor = Bullet;
 
-modules.export = Bullet;
+module.exports = Bullet;
