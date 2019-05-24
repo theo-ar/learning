@@ -1,18 +1,12 @@
-const MovingObject = require("./moving_object.js")
-const Asteroid = require("./asteroid.js")
-const Game = require("./game.js")
-const GameView = require("./game_view.js")
-const Ship = require("./ship.js")
+const Game = require("./game");
+const GameView = require("./game_view");
 
-window.MovingObject = MovingObject;
-window.Asteroid = Asteroid;
-window.Ship = Ship;
-window.Game = Game;
-window.GameView = GameView;
-
-document.addEventListener("DOMContentLoaded", function(){
-  const canvasEl = document.getElementById("mycanvas");
-  canvasEl.height = Game.DIM_Y;
+document.addEventListener("DOMContentLoaded", function () {
+  const canvasEl = document.getElementsByTagName("canvas")[0];
   canvasEl.width = Game.DIM_X;
-  new GameView().start(canvasEl);
-}); 
+  canvasEl.height = Game.DIM_Y;
+
+  const ctx = canvasEl.getContext("2d");
+  const game = new Game();
+  new GameView(game, ctx).start();
+});

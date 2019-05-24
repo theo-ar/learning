@@ -1,10 +1,17 @@
-var MovingObject = require("./moving_object.js")
+const Util = require("./util");
+const MovingObject = require("./moving_object");
 
-function Bullet(name) {
-  MovingObject.call(this, name)
-};
+function Bullet(options) {
+  options.radius = Bullet.RADIUS;
 
-Bullet.prototype = Object.create(movingObject.prototype);
-Bullet.prototype.constructor = Bullet;
+  MovingObject.call(this, options);
+}
+
+Bullet.RADIUS = 2;
+Bullet.SPEED = 15;
+
+Util.inherits(Bullet, MovingObject);
+
+Bullet.prototype.isWrappable = false;
 
 module.exports = Bullet;
