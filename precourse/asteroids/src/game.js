@@ -1,11 +1,14 @@
-var Asteroid = require("./asteroid.js")
+var Asteroid = require("./asteroid.js");
+
+
 const asteroids = [];
 
 function Game() {
   this.asteroids = this.addAsteroids()
+  this.ship = new Ship({});
 }
 
-Game.NUM_ASTEROIDS = 10;
+Game.NUM_ASTEROIDS = 20;
 Game.DIM_X = 1000;
 Game.DIM_Y = 500;
 
@@ -62,6 +65,9 @@ Game.prototype.step = function() {
   this.moveObjects();
   this.checkCollisions();
 }
+
+Game.prototype.allObjects = function() {}
+
 
 
 module.exports = Game;

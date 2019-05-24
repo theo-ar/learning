@@ -1,5 +1,3 @@
-
-
 function MovingObject(object) {
   this.pos = object.pos;
   this.vel = object.vel;

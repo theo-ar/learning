@@ -1,10 +1,20 @@
 var MovingObject = require("./moving_object.js")
+var Game = require("./game.js")
+var Util = require("./utils.js")
 
-function Ship(name) {
-  MovingObject.call(this, name)
+function Ship(object) {
+  MovingObject.call(this, object)
+  this.pos = Game.prototype.randomPosition();
+  this.vel = [0,0];
+  this.radius = Ship.RADIUS;
+  this.color = Ship.COLOR;
 };
 
-Ship.prototype = Object.create(movingObject.prototype);
-Ship.prototype.constructor = Ship;
+Ship.RADIUS = 10;
+Ship.COLOR = "red";
+
+
+
+Util.inherits(Ship, MovingObject);
 
 module.exports = Ship;
